@@ -67,10 +67,9 @@ class BallisticsGelGreenArmorV : hdmobbase
 		spawn:
 			POSS A 0 nodelay
 			{
-				a_takeinventory("hdarmourworn");
+				a_takeinventory("HDArmourWorn");
 				
-				let arw = hdarmourworn(giveinventorytype("hdarmourworn"));
-				arw.durability = HDCONST_GARRISONARMOUR;
+				giveinventorytype("GarrisonArmourWorn");
 			}
 		
 		spawn2:
@@ -119,11 +118,9 @@ class BallisticsGelBlueArmorV : hdmobbase
 		spawn:
 			PLAY A 0 nodelay
 			{
-				a_takeinventory("hdarmourworn");
+				a_takeinventory("HDArmourWorn");
 				
-				let arw = hdarmourworn(giveinventorytype("hdarmourworn"));
-				arw.durability = HDCONST_BATTLEARMOUR;
-				arw.mega = true;
+				giveinventorytype("BattleArmourWorn");
 			}
 		
 		spawn2:
